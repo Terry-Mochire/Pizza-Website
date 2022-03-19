@@ -47,7 +47,33 @@ html {
 }
 .intro input{
     width: 20%;
-    padding: 12px 20px;
     border-radius: 30px;
     background-color: rgb(231, 79, 41);
+} 
+.aboutus {
+    background-image: url("../images/nordwood-themes-Tmz8FThN_BE-unsplash-removebg-preview\ \(1\).png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* object-fit: contain ; */
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    padding-top: 5%;
+}
+.aboutus h3 {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 45px;
+}
+.aboutus span{
+    color: rgb(226, 36, 36);
+    font-family: 'Courgette', cursive;
+    font-size: 30px;
+}
+.aboutus p{
+    padding: 2% 20%;
+    font-size: x-large;
+}
+.aboutus .row{
+    /* margin-top: 1%;
+    margin-bottom: 5%; */
 }
