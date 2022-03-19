@@ -45,4 +45,9 @@ html {
     font-family:'Courier New', Courier, monospace;
     font-size: 50px;
 }
-
+.intro input{
+    width: 20%;
+    padding: 12px 20px;
+    border-radius: 30px;
+    background-color: rgb(231, 79, 41);
+}
