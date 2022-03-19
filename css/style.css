@@ -73,10 +73,6 @@ html {
     padding: 2% 20%;
     font-size: x-large;
 }
-.aboutus .row{
-    /* margin-top: 1%;
-    margin-bottom: 5%; */
-}
 .menu h3{
     font-family:'Courier New', Courier, monospace;
     font-size: 45px;
@@ -143,4 +139,34 @@ html {
   margin-bottom: 5%;
   margin-left: 20%;
   margin-right: 0%;
+}
+.checkout{
+    background-image: url("../images/IMG_3660.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+}
+#checkoutContent{
+    background-color: rgb(253, 253, 253);
+    margin: 5%;
+    height: 60vh;
+    box-shadow: 10px 10px 5px rgb(22, 22, 21) ;
+}
+.order {
+    border-right: 0.5px solid black;
+    padding-left: 5%;
+}
+.deliver {
+    padding-left: 5%;
+}
+.order p, label{
+    margin-bottom: 2%;
+}
+#checkoutContent h3{
+    font-family:'Courier New', Courier, monospace;
+    padding: 3%;
+    font-size: 45px;
+    color: rgb(170, 152, 152);
+    text-align:center;
 }

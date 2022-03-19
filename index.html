@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Courgette&family=Fira+Sans+Condensed&family=Hubballi&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
 
 </head>
 <body>
@@ -41,7 +42,9 @@
                     <h3 id="upperCase">THAN JUST PIZZA</h3>
                     <p>Just like true Italians, we give our food everything we've got!</p>
                     <p>Book online or Call (555)123-4567</p>
-                        <input type="button" class="btn btn-secondary btn-lg" value="ORDER NOW">  
+                    <a href="#menu">
+                        <input type="button" class="btn btn-secondary btn-lg" value="ORDER NOW">
+                    </a>  
                 </div>
             </div>
         </div>
@@ -62,7 +65,7 @@
               </div>  
             </div>
         </div>
-        <div class="menu">
+        <div class="menu" id="menu">
             <h3>OUR MENU</h3>
             <div class="row">
                 <div class="col-sm-4">
@@ -102,6 +105,46 @@
                     <h5>Margherita </h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, exercitationem!</p>
                     <input type="button" class="btn btn-secondary btn-lg" value="ORDER NOW"> 
+                </div>
+            </div>
+        </div>
+        <div class="checkout">
+            <div id="checkoutContent">
+                <h3>CHECKOUT</h3>
+                <div class="row">
+                    <div class="col-md-6 order">
+                        <p><span class="choice">Your Pizza Choice: </span></p>
+                        <label for="number">How many: </label>
+                        <input type="number" name="number" id="number" style="width: 10%;"><br>
+                        <label for="toppings">Extra Toppings?</label>
+                            <select name="toppings" id="toppings-select">
+                                <option value="None">None</option>
+                                <option value="Cheese">Cheese</option>
+                                <option value="Mushrooms">Mushrooms</option>
+                                <option value="Tomatoes">Tomatoes</option>
+                                <option value="Bacon">Bacon</option>
+                                <option value="Chicken">Chicken</option>
+                                <option value="Beef">Beef</option>
+                            </select><br>
+                        <input type="submit" name="calculate" id="calculate" value="Calculate Total">
+                        <p><span class="currentTotal">Your Total is: Ksh </span></p>
+                    </div>
+                    <div class="col-md-6 deliver">
+                        <label for="deliveryOption">Do you wish to have your order delivered or ready for pick up?</label><br>
+                        <input type="radio" name="deliver" id="deliver">
+                        <label for="deliver">Deliver</label>
+                        <input type="radio" name="pick" id="pick">
+                        <label for="pick">Pick Up</label>
+                        <div id="deliveryDetails">
+                            <p>Delivery Details</p>
+                            <label for="location">Location: </label>
+                            <input type="text" name="location" id="location"><br>
+                            <label for="street">Street Name: </label> 
+                            <input type="text" name="street" id="street"><br>
+                            <label for="houseNo">House No: </label>
+                            <input type="text" name="houseNo" id="houseNo"><br>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
