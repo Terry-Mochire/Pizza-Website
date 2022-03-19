@@ -113,7 +113,7 @@
                 <h3>CHECKOUT</h3>
                 <div class="row">
                     <div class="col-md-6 order">
-                       <form action="" class="orderForm">
+                       <form action="" id="orderForm">
                         <label for="pizzaChoice">Pizza Type</label>
                         <select name="pizzaChoice" id="choice-select">
                             <option value=" ">Select type</option>
@@ -151,6 +151,9 @@
                                 <option value="Beef">Beef</option>
                             </select><br>
                         <input type="submit" name="calculate" id="calculate" value="Place Order">
+                        <ul id="userOrder">
+
+                        </ul>
                         <p><span class="currentTotal">Your Total is: Ksh </span></p>
                        </form>
                     </div>
