@@ -113,7 +113,24 @@
                 <h3>CHECKOUT</h3>
                 <div class="row">
                     <div class="col-md-6 order">
-                        <p><span class="choice">Your Pizza Choice: </span></p>
+                       <form action="" class="orderForm">
+                        <label for="pizzaChoice">Pizza Type</label>
+                        <select name="pizzaChoice" id="choice-select">
+                            <option value=" ">Select type</option>
+                            <option value="Pepperoni">Pepperoni</option>
+                            <option value="Parmio">Parmio</option>
+                            <option value="Boerewors">Boerewors</option>
+                            <option value="Hawaiian">Hawaiian</option>
+                            <option value="Quattro">Quattro</option>
+                            <option value="Margherita">Margherita</option>
+                        </select><br>
+                        <label for="size">Size</label>
+                        <select name="size" id="size-select">
+                            <option value="Small">Small</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Large">Large</option>
+                            <option value="Mega">Mega</option>
+                        </select><br>
                         <label for="number">How many: </label>
                         <input type="number" name="number" id="number" style="width: 10%;"><br>
                         <label for="toppings">Extra Toppings?</label>
@@ -126,8 +143,9 @@
                                 <option value="Chicken">Chicken</option>
                                 <option value="Beef">Beef</option>
                             </select><br>
-                        <input type="submit" name="calculate" id="calculate" value="Calculate Total">
+                        <input type="submit" name="calculate" id="calculate" value="Place Order">
                         <p><span class="currentTotal">Your Total is: Ksh </span></p>
+                       </form>
                     </div>
                     <div class="col-md-6 deliver">
                         <label for="deliveryOption">Do you wish to have your order delivered or ready for pick up?</label><br>
