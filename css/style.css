@@ -77,3 +77,25 @@ html {
     /* margin-top: 1%;
     margin-bottom: 5%; */
 }
+.menu h3{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 45px;
+    text-align: center;
+    margin-top: 5%;
+}
+.menu .row {
+    margin: 10%;
+}
+.col-sm-4 h5 {
+    padding: 1% 25%;
+    font-family: 'Courgette', cursive;
+    font-size: larger;
+}
+.col-sm-4 p {
+    padding: 0 10%;
+}
+.col-sm-4 input[type="button"] {
+    margin: 1% 25%;
+    border-radius: 30px;
+    background-color: rgb(231, 79, 41);
+}
