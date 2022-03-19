@@ -7,6 +7,30 @@ function order(type, crust, size, number, toppings) {
     this.toppings =toppings;
 };
 
+order.prototype.beforeToppingsPrice = function () {
+    var pizzaPrice;
+   if (this.size == "Small") {
+        var pizzaPrice = 500;
+   }else if (this.size == "Medium") {
+       var pizzaPrice = 700;
+   }else if (this.size == "Large") {
+       var pizzaPrice = 1000;
+   }else{
+       var pizzaPrice = 1200;
+   } return pizzaPrice * this.number;
+   
+};
+order.prototype. afterToppingsPrice = function () {
+    if (this.toppings == "None") {
+        return this.beforeToppingsPrice();
+    } else {
+        return this.beforeToppingsPrice() + 200;
+    }
+}
+order.prototype.beforeDeliveryPrice = function () {
+    return (parseInt($('span').text('')) += this.afterToppingsPrice(''));
+}
+
 // User Interface
 $(function(event){
     $('form#orderForm').submit(function(event){
@@ -20,6 +44,8 @@ $(function(event){
 
         var newOrder = new order(inputtedType, inputtedCrust, inputtedSize, inputtedNumber,inputtedToppings);
         console.log(newOrder);
-        $('ul#userOrder').append("<li><span = 'ordered'>" + newOrder.type + "</span></li>" )
+        $('ul#userOrder').append("<li><span = 'ordered'>" + newOrder.type + "(" + newOrder.number + ")" + "</span></li>" );
+        console.log(newOrder.afterToppingsPrice());
+        $('p#currentTotal').append("<span>" + newOrder.afterToppingsPrice() + "</span>");
     })
 })
