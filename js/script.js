@@ -7,7 +7,7 @@ function order(type, crust, size, number, toppings) {
     this.toppings =toppings;
 };
 
-order.prototype.beforeToppingsPrice = function () {
+order.prototype.priceBySize = function () {
     var pizzaPrice;
    if (this.size == "Small") {
         var pizzaPrice = 500;
@@ -20,17 +20,28 @@ order.prototype.beforeToppingsPrice = function () {
    } return pizzaPrice;
    
 };
+order.prototype.pricebyCrust = function(){
+    var crustPrice;
+    if (this.crust == "Crispy") {
+       var crustPrice = this.priceBySize()+ 50;
+    } else if (this.crust== "Stuffed") {
+       var crustPrice = this.priceBySize() + 100;
+    } else {
+       var crustPrice = this.priceBySize() + 120;
+    } return crustPrice;
+};
+
 order.prototype. afterToppingsPrice = function () {
     if (this.toppings == "None") {
-        return this.beforeToppingsPrice()  * this.number;
+        return this.pricebyCrust()  * this.number;
     } else if( this.size == "Small"){
-        return (this.beforeToppingsPrice() + 70) * this.number;
+        return (this.pricebyCrust() + 70) * this.number;
     } else if (this.size == "Medium") {
-        return (this.beforeToppingsPrice() + 100) * this.number;
+        return (this.pricebyCrust() + 100) * this.number;
     } else if(this.size == "Large") {
-        return (this.beforeToppingsPrice() +150) * this.number;
+        return (this.pricebyCrust() +150) * this.number;
     } else {
-        return (this.beforeToppingsPrice() + 200) * this.number;
+        return (this.pricebyCrust() + 200) * this.number;
     }
 }
 
