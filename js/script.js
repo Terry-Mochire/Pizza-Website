@@ -59,7 +59,12 @@ $(function(event){
 
         var newOrder = new order(inputtedType, inputtedCrust, inputtedSize, inputtedNumber,inputtedToppings);
         console.log(newOrder);
-        $('ul#userOrder').append("<li><span = 'ordered'>" + newOrder.type + "(" + newOrder.number + ")" + "</span></li>" );
+        $(".pizza-size").append('<tr><td id="pizza-size">' + newOrder.size);
+        $(".pizza-crust").append('<tr><td id="pizza-crust">' + newOrder.crust);
+        $(".pizza-flavor").append('<tr><td id="pizza-flavor">' + newOrder.type);
+        $(".number").append('<tr><td id="number">' + newOrder.number);
+        $(".toppings").append('<tr><td id="toppings">' + newOrder.toppings);
+        $(".pizzaTotal1").append('<tr><td id="pizzaTotal1">' + newOrder.afterToppingsPrice());
         console.log(newOrder.afterToppingsPrice());
         $('p#currentTotal').append("<span>" + newOrder.afterToppingsPrice() + "</span>");
     });
