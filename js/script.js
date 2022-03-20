@@ -48,4 +48,15 @@ $(function(event){
         console.log(newOrder.afterToppingsPrice());
         $('p#currentTotal').append("<span>" + newOrder.afterToppingsPrice() + "</span>");
     })
+    $('form#deliver').submit(function(event){
+        event.preventDefault();
+
+        if (document.getElementById('deliveryOption').value == "PickUp") {
+            $('div#pickUpDetails').show();
+        } else if (document.getElementById('deliveryOption').value == "Deliver"){
+            $('div#deliveryDetails').show();
+        } else{
+            alert("Choose between Delivery or Pick Up.")
+        }
+    })
 })

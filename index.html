@@ -157,12 +157,16 @@
                         <p id="currentTotal">Your Total is: Ksh </p>
                        </form>
                     </div>
-                    <div class="col-md-6 deliver">
-                        <label for="deliveryOption">Do you wish to have your order delivered or ready for pick up?</label><br>
-                        <input type="radio" name="deliver" id="deliver">
-                        <label for="deliver">Deliver</label>
-                        <input type="radio" name="pick" id="pick">
-                        <label for="pick">Pick Up</label>
+                    <div class="col-md-6">
+                        <form action="" id="deliver">
+                            <label for="deliveryOption">Do you wish to have your order delivered or ready for pick up?</label><br>
+                            <select name="deliveryOption" id="deliveryOption">
+                                <option value="None">Select one --</option>
+                                <option value="PickUp">Pick Up</option>
+                                <option value="Deliver">Deliver</option>
+                            </select>
+                            <input type="submit" id="selectbtn" value="Select"> 
+                        </form>
                         <div id="deliveryDetails">
                             <p>Delivery Details</p>
                             <label for="location">Location: </label>
@@ -171,6 +175,10 @@
                             <input type="text" name="street" id="street"><br>
                             <label for="houseNo">House No: </label>
                             <input type="text" name="houseNo" id="houseNo"><br>
+                            <input type="submit" name="submitbtn" value="Confirm Order">
+                        </div>
+                        <div id="pickUpDetails">
+                            <p>Our Nearest Pick Up Location is at:  <br> 8901 Marsabit Road, Nairobi, DO489GR </p>
                         </div>
                     </div>
                 </div>

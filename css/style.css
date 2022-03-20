@@ -170,3 +170,9 @@ html {
     color: rgb(170, 152, 152);
     text-align:center;
 }
+#deliveryDetails {
+    display: none;
+}
+#pickUpDetails {
+    display: none;
+}
