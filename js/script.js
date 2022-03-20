@@ -17,19 +17,23 @@ order.prototype.beforeToppingsPrice = function () {
        var pizzaPrice = 1000;
    }else{
        var pizzaPrice = 1200;
-   } return pizzaPrice * this.number;
+   } return pizzaPrice;
    
 };
 order.prototype. afterToppingsPrice = function () {
     if (this.toppings == "None") {
-        return this.beforeToppingsPrice();
+        return this.beforeToppingsPrice()  * this.number;
+    } else if( this.size == "Small"){
+        return (this.beforeToppingsPrice() + 70) * this.number;
+    } else if (this.size == "Medium") {
+        return (this.beforeToppingsPrice() + 100) * this.number;
+    } else if(this.size == "Large") {
+        return (this.beforeToppingsPrice() +150) * this.number;
     } else {
-        return this.beforeToppingsPrice() + 200;
+        return (this.beforeToppingsPrice() + 200) * this.number;
     }
 }
-order.prototype.beforeDeliveryPrice = function () {
-    return (parseInt($('span').text('')) += this.afterToppingsPrice(''));
-}
+
 
 // User Interface
 $(function(event){
