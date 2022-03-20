@@ -95,6 +95,9 @@ html {
     border-radius: 30px;
     background-color: rgb(231, 79, 41);
 }
+.col-sm-4 img {
+    filter: drop-shadow(8px 8px 10px gray);
+}
 .contactus {
     background-image: url("../images/IMG_3658.JPG");
     background-repeat: no-repeat;
