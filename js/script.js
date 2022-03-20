@@ -43,7 +43,7 @@ order.prototype. afterToppingsPrice = function () {
     } else {
         return (this.pricebyCrust() + 200) * this.number;
     }
-}
+};
 
 
 // User Interface
@@ -56,7 +56,6 @@ $(function(event){
         var inputtedSize = $('select#size-select').val();
         var inputtedNumber =$('input#number').val();
         var inputtedToppings = $('select#toppings-select').val();
-
         var newOrder = new order(inputtedType, inputtedCrust, inputtedSize, inputtedNumber,inputtedToppings);
         console.log(newOrder);
         $(".pizza-size").append('<tr><td id="pizza-size">' + newOrder.size);
