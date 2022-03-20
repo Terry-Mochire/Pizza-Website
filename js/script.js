@@ -59,4 +59,9 @@ $(function(event){
             alert("Choose between Delivery or Pick Up.")
         }
     })
+    $('input#submitbtn').click( function(event) {
+        event.preventDefault();
+
+        alert("Thank you for placing an order with us. Our rider will be reaching out to you soon.")
+    })
 })
