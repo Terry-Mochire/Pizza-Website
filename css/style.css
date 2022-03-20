@@ -24,7 +24,14 @@ html {
 .navbar li {
     color: white;
 }
+.navbar a:link {
+    text-decoration: none;
+}
+.navbar a:hover {
+    color: rgb(226, 36, 36);
+}
 #content {
+    height: 100vh;
     max-width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     background-size: 100% 100%;
@@ -55,7 +62,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     /* object-fit: contain ; */
-    height: 100vh;
+    height: 100%;
     width: 100%;
     text-align: center;
     padding-top: 5%;
@@ -80,15 +87,14 @@ html {
     margin-top: 5%;
 }
 .menu .row {
-    margin: 10%;
+    display: flex;
+    justify-content: center;
+    margin-left: 4% ;
 }
 .col-sm-4 h5 {
     padding: 1% 25%;
     font-family: 'Courgette', cursive;
     font-size: larger;
-}
-.col-sm-4 p {
-    padding: 0 10%;
 }
 .col-sm-4 input[type="button"] {
     margin: 1% 25%;

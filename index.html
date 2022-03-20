@@ -27,12 +27,20 @@
                        </div>
                     </div>
                     <div class="col-md-6">
-                        <nav class="navbar navbar-expand-sm justify-content-start">
+                        <nav class="navbar navbar-expand-sm justify-content-center">
                             <ul class="navbar-nav">
-                                <li class="nav-link">HOME</li>
-                                <li class="nav-link">ABOUT US</li>
-                                <li class="nav-link">OUR MENU</li>
-                                <li class="nav-link">CONTACT</li>
+                                <a href="#">
+                                    <li class="nav-link">HOME</li>
+                                </a>
+                                <a href="#aboutus">
+                                    <li class="nav-link">ABOUT US</li>
+                                </a>
+                                <a href="#menu">
+                                    <li class="nav-link">OUR MENU</li>
+                                </a>
+                               <a href="#contact">
+                                    <li class="nav-link">CONTACT</li>
+                               </a>
                                 </ul>
                         </nav>
                     </div>
@@ -48,11 +56,11 @@
                 </div>
             </div>
         </div>
-        <div class="aboutus">
+        <div class="aboutus" id="aboutus">
             <h3>WELCOME TO PIZZA HOUSE</h3>
             <p><span>Italian to the Bone</span></p>
             <p>Founded by 1st generation of immigrants from Sicily, this Italian restaurant has quickly become a local area staple. With an amazing range of Italian dishes of both classic and modern traditions, starting with pizzas. We promise to become your favorite pizza places.</p>
-            <div class="row">
+            <!-- <div class="row">
               <div class="col-md-4"></div>
               <div class="col-md-2">
                   <img src="./images/badge.png" alt="badge" style="width: 100px;height: 100px;">
@@ -63,28 +71,34 @@
               <div class="col-md-2">
                   <img src="./images/quality.png" alt="quality" style="width: 100px;height: 100px;">
               </div>  
-            </div>
+            </div> -->
         </div>
         <div class="menu" id="menu">
             <h3>OUR MENU</h3>
             <div class="row">
                 <div class="col-sm-4">
-                    <img src="./images/fernando-andrade-_P76trHTWDE-unsplash.jpg" alt="Pepperoni Pizza" style="width: 350px; height: 300px;">
+                    <img src="./images/fernando-andrade-_P76trHTWDE-unsplash.jpg" alt="Pepperoni Pizza" style="width: 300px; height: 300px;">
                     <h5>Pepperoni Pizza</h5>
                     <p>Small(500), Medium(700), Large(1000), Mega(1200).</p>
-                    <input type="button" class="btn btn-secondary btn-lg" value="ORDER NOW"> 
+                    <a href="#checkoutContent">
+                        <input type="button" class="btn btn-secondary btn-lg" value="ORDER NOW"> 
+                    </a>
                 </div>
                 <div class="col-sm-4">
-                    <img src="./images/rahul-upadhyay-yDKHJxfiWDk-unsplash.jpg" alt="Veggie Tikka" style="width: 350px; height: 300px;">
+                    <img src="./images/rahul-upadhyay-yDKHJxfiWDk-unsplash.jpg" alt="Veggie Tikka" style="width: 300px; height: 300px;">
                     <h5>Parmio Pizza</h5>
                     <p>Small(500), Medium(700), Large(1000), Mega(1200).</p>
-                    <input type="button" class="btn btn-secondary btn-lg" value="ORDER NOW"> 
+                    <a href="#checkoutContent">
+                        <input type="button" class="btn btn-secondary btn-lg" value="ORDER NOW">
+                    </a>
                 </div>
                 <div class="col-sm-4">
-                    <img src="./images/saahil-khatkhate-kfDsMDyX1K0-unsplash.jpg" alt="Boerewors" style="width: 350px; height: 300px;">
+                    <img src="./images/saahil-khatkhate-kfDsMDyX1K0-unsplash.jpg" alt="Boerewors" style="width: 300px; height: 300px;">
                     <h5>Boerewors Pizza</h5>
                     <p>Small(500), Medium(700), Large(1000), Mega(1200).</p>
-                    <input type="button" class="btn btn-secondary btn-lg" value="ORDER NOW"> 
+                    <a href="#checkoutContent">
+                        <input type="button" class="btn btn-secondary btn-lg" value="ORDER NOW">  
+                    </a>
                 </div>
             </div>
             <div class="row">
@@ -92,19 +106,25 @@
                     <img src="./images/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="Hawaiian" style="width: 300px; height: 300px;">
                     <h5>Hawaiian Pizza</h5>
                     <p>Small(500), Medium(700), Large(1000), Mega(1200).</p>
-                    <input type="button" class="btn btn-secondary btn-lg" value="ORDER NOW"> 
+                    <a href="#checkoutContent">
+                        <input type="button" class="btn btn-secondary btn-lg" value="ORDER NOW">
+                    </a> 
                 </div>
                 <div class="col-sm-4">
-                    <img src="./images/yoav-aziz-hwh8X7usIk8-unsplash.jpg" alt="Mushroom Pizza" style="width: 350px; height: 300px;">
+                    <img src="./images/yoav-aziz-hwh8X7usIk8-unsplash.jpg" alt="Mushroom Pizza" style="width: 300px; height: 300px;">
                     <h5>Quattro Stagioni</h5>
                     <p>Small(500), Medium(700), Large(1000), Mega(1200).</p>
-                    <input type="button" class="btn btn-secondary btn-lg" value="ORDER NOW"> 
+                    <a href="#checkoutContent">
+                        <input type="button" class="btn btn-secondary btn-lg" value="ORDER NOW">
+                    </a> 
                 </div>
                 <div class="col-sm-4">
-                    <img src="./images/aurelien-lemasson-theobald-x00CzBt4Dfk-unsplash.jpg" alt="Margherita Pizza" style="width: 350px; height: 300px;">
+                    <img src="./images/aurelien-lemasson-theobald-x00CzBt4Dfk-unsplash.jpg" alt="Margherita Pizza" style="width: 300px; height: 300px;">
                     <h5>Margherita </h5>
                     <p>Small(500), Medium(700), Large(1000), Mega(1200).</p>
-                    <input type="button" class="btn btn-secondary btn-lg" value="ORDER NOW"> 
+                    <a href="#checkoutContent">
+                        <input type="button" class="btn btn-secondary btn-lg" value="ORDER NOW">
+                    </a> 
                 </div>
             </div>
         </div>
@@ -210,7 +230,7 @@
                 </div>
             </div>
         </div>
-        <div class="contactus">
+        <div class="contactus" id="contact">
             <h3>CONTACT US</h3>
             <div class="row main">
                 <div class="col-md-6">
