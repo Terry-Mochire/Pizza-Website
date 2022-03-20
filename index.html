@@ -114,8 +114,8 @@
                 <div class="row">
                     <div class="col-md-6 order">
                        <form action="" id="orderForm">
-                        <label for="pizzaChoice">Pizza Type</label>
-                        <select name="pizzaChoice" id="choice-select">
+                        <label for="pizzaChoice">Pizza Type</label><br>
+                        <select name="pizzaChoice" id="choice-select" required>
                             <option value=" ">Select type</option>
                             <option value="Pepperoni">Pepperoni</option>
                             <option value="Parmio">Parmio</option>
@@ -124,32 +124,32 @@
                             <option value="Quattro">Quattro</option>
                             <option value="Margherita">Margherita</option>
                         </select><br>
-                        <label for="crust">Crust Type: </label>
-                        <select name="crust" id="crust-select">
+                        <label for="crust">Crust Type: </label><br>
+                        <select name="crust" id="crust-select" required>
                             <option value="">Select type</option>
                             <option value="Crispy">Crispy( + Ksh 50)</option>
                             <option value="Stuffed">Stuffed( + Ksh 100)</option>
                             <option value="Gluten Free">Gluten Free(+ Ksh 120)</option>
                         </select><br>
-                        <label for="size">Size: </label>
-                        <select name="size" id="size-select">
+                        <label for="size">Size: </label><br>
+                        <select name="size" id="size-select" required>
                             <option value="Small">Small(Ksh 500)</option>
                             <option value="Medium">Medium(ksh 700)</option>
                             <option value="Large">Large(Ksh 1000)</option>
                             <option value="Mega">Mega(Ksh 1200)</option>
                         </select><br>
-                        <label for="number">How many: </label>
-                        <input type="number" name="number" id="number" style="width: 10%;"><br>
-                        <label for="toppings">Extra Toppings?</label>
-                            <select name="toppings" id="toppings-select">
-                                <option value="None">None</option>
-                                <option value="Cheese">Cheese</option>
-                                <option value="Mushrooms">Mushrooms</option>
-                                <option value="Tomatoes">Tomatoes</option>
-                                <option value="Bacon">Bacon</option>
-                                <option value="Chicken">Chicken</option>
-                                <option value="Beef">Beef</option>
-                            </select><br>
+                        <label for="toppings">Extra Toppings?</label><br>
+                        <select name="toppings" id="toppings-select" required>
+                            <option value="None">None</option>
+                            <option value="Cheese">Cheese</option>
+                            <option value="Mushrooms">Mushrooms</option>
+                            <option value="Tomatoes">Tomatoes</option>
+                            <option value="Bacon">Bacon</option>
+                            <option value="Chicken">Chicken</option>
+                            <option value="Beef">Beef</option>
+                        </select><br>
+                        <label for="number">How many: </label><br>
+                        <input type="number" name="number" id="number" style="width: 10%;" required><br>
                         <input type="submit" name="calculate" id="calculate" value="Place Order">
                         <ul id="userOrder">
 
@@ -158,25 +158,19 @@
                        </form>
                     </div>
                     <div class="col-md-6">
-                        <form action="" id="deliver">
-                            <label for="deliveryOption">Do you wish to have your order delivered or ready for pick up?</label><br>
-                            <select name="deliveryOption" id="deliveryOption">
-                                <option value="None">Select one --</option>
-                                <option value="PickUp">Pick Up</option>
-                                <option value="Deliver">Deliver</option>
-                            </select>
-                            <input type="submit" id="selectbtn" value="Select"> 
-                        </form>
+                        <label for="deliveryOption">Do you wish to have your order delivered or ready for pick up?</label><br>
+                        <button class="btn btn-secondary btn-lg" id="Deliver">Deliver</button>
+                        <button  class="btn btn-secondary btn-lg" id="PickUp">Pick Up</button>
                         <div id="deliveryDetails">
                             <p>Delivery Details</p>
                             <label for="phoneNumber">Phone Number</label>
-                            <input type="text" name="phoneNumber" id="phoneNumber"><br>
+                            <input type="text" name="phoneNumber" id="phoneNumber" required><br>
                             <label for="location">Location: </label>
-                            <input type="text" name="location" id="location"><br>
+                            <input type="text" name="location" id="location" required><br>
                             <label for="street">Street Name: </label> 
-                            <input type="text" name="street" id="street"><br>
+                            <input type="text" name="street" id="street" required><br>
                             <label for="houseNo">House No: </label>
-                            <input type="text" name="houseNo" id="houseNo"><br>
+                            <input type="text" name="houseNo" id="houseNo" required><br>
                             <input type="submit" id="submitbtn" value="Confirm Order">
                         </div>
                         <div id="pickUpDetails">

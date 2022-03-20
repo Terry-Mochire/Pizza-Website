@@ -156,12 +156,15 @@ html {
 .order {
     border-right: 0.5px solid black;
     padding-left: 5%;
+   
 }
-.deliver {
-    padding-left: 5%;
+.order select {
+    width: 50%;
+    margin-bottom: 2%;
 }
 .order p, label{
-    margin-bottom: 2%;
+    font-family: 'Hubballi', cursive;
+    font-size: x-large;
 }
 #checkoutContent h3{
     font-family:'Courier New', Courier, monospace;
@@ -169,6 +172,10 @@ html {
     font-size: 45px;
     color: rgb(170, 152, 152);
     text-align:center;
+}
+#Deliver, #PickUp {
+    color: white;
+    background-color: rgb(231, 79, 41);
 }
 #deliveryDetails {
     display: none;
