@@ -65,7 +65,7 @@ $(function(event){
         $(".toppings").append('<tr><td id="toppings">' + newOrder.toppings);
         $(".pizzaTotal1").append('<tr><td id="pizzaTotal1">' + newOrder.afterToppingsPrice());
         console.log(newOrder.afterToppingsPrice());
-        $('p#currentTotal').append("<span>" + newOrder.afterToppingsPrice() + "</span>");
+        $('p#currentTotal').append("<span>" + newOrder.afterToppingsPrice() + " + </span>");
     });
    $('button#Deliver').click(function(event) {
        event.preventDefault();
@@ -79,7 +79,7 @@ $(function(event){
    });
     $('input#submitbtn').click( function(event) {
         event.preventDefault();
-
-        alert("Thank you for placing an order with us. Our rider will be reaching out to you soon.")
+        var deliveryDestination = $('input#location').val();
+        alert("Thank you for placing an order with us. Delivery to " + deliveryDestination + "is an extra 100. Our rider will reach out soon.")
     })
 })
